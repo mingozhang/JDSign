@@ -426,6 +426,7 @@ function showMsg() {
   if (!jdNotify || jdNotify === 'false') {
     $.msg($.name, subTitle, message);
   }
+  allMessage+=`京东账号${$.index} ${$.nickName || $.UserName}\n${message}`;
 }
 // ================================================此处是API=================================
 //每轮种豆活动获取结束后,自动收取京豆
